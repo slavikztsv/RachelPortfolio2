@@ -1,0 +1,22 @@
+.main-image {
+  object-fit: cover;
+  object-position: top;
+  width: 100vw;
+  // height: 60vh;
+  // height: 35rem;
+  // width: calc(100vw - 10px);
+  // transform: translateY(31rem);
+}
+
+ngx-parallax-scroll {
+  height: 100vh;
+  // position: absolute;
+  // top: 0rem;
+  // left: 0rem;
+  // transform: translateY(-7rem);
+  // height: 56rem;
+}
+
+.home-gallery {
+  z-index: 5;
+}

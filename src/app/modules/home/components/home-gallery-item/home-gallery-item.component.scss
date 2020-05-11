@@ -1,0 +1,28 @@
+.media-image{
+  z-index: 100;
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.media-title {
+  font-size: 2em;
+  position: absolute;
+  text-align: center;
+  line-height: 1em;
+  white-space: pre;
+}
+
+.media-container-xl {
+  font-size: 1.4rem;
+}
+
+.media-container-lg {
+  font-size: 1rem;
+}
+
+.media-container-xl, .media-container-lg {
+  background-color: red;
+  // height: 100% !important;
+  cursor: pointer;
+}

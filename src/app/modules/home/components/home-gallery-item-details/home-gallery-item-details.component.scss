@@ -1,0 +1,50 @@
+.details-card-xl {
+  font-size: 1rem !important;
+}
+
+.details-card-lg {
+  font-size: 0.65rem !important;
+}
+
+.details-card-xs {
+  font-size: 0.3rem !important;
+  height: 100vh !important;
+  width: 100vw !important;
+}
+
+.media-primary {
+  width: 53em;
+  height: 40em;
+}
+
+.media-child {
+  width: 8em;
+  height: 6em;
+  display: block;
+}
+
+.video-child-container {
+  position: relative;
+}
+
+.video-child-container .media-child{
+  display: block;
+}
+
+.video-child-container .play-icon{
+  position: absolute;
+  top: 0.5em;
+  left: 0.8em;
+  font-size: 3em;
+  color: white;
+}
+
+video {
+  font-size: 1em;
+  width: 53em;
+  height: 40em;
+}
+
+nb-icon, .media-child {
+  cursor: pointer;
+}

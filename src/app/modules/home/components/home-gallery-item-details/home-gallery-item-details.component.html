@@ -1,0 +1,52 @@
+<nb-card size="giant" ngClass.lt-xl="details-card-lg" ngClass.xl="details-card-xl" ngClass.xs="details-card-xs">
+  <nb-card-body>
+      <div fxLayout="column" class="no-select">
+        <div fxLayout="row" fxLayoutAlign="end center">
+          <nb-icon icon="close-outline" class="no-select" (click)="onCloseClick()"></nb-icon>
+        </div>
+        <div fxLayout="row" fxLayout.xs="column">
+          <div fxFlex fxLayout="column" fxLayoutGap="1em" fxFlexFill>
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="1em">
+              <div>
+                <nb-icon icon="arrow-ios-back-outline" (click)="onPrevMediaClick()"></nb-icon>
+              </div>
+              <div *ngIf="selectedMedia.type === MediaType.Image">
+                <img class="media-primary" src="assets/media/materials/{{selectedMedia.folderName}}/{{selectedMedia.fileName}}">
+              </div>
+              <div *ngIf="selectedMedia.type === MediaType.Video">
+                <vg-player (onPlayerReady)="onPlayerReady($event)">
+                  <video [vgMedia]="media" #media [id]="selectedMedia.fileName" preload="auto" controls>
+                      <source src="assets/media/materials/{{selectedMedia.folderName}}/{{selectedMedia.fileName}}" type="video/mp4">
+                  </video>
+                </vg-player>
+              </div>
+              <div>
+                <nb-icon icon="arrow-ios-forward-outline" (click)="onNextMediaClick()"></nb-icon>
+              </div>
+            </div>
+            <div fxlayout="row" fxFlex fxLayoutAlign="center center" fxLayoutGap="1em">
+              <ng-container *ngFor="let childMedia of selectedMedia.childMedia">
+                <div *ngIf="childMedia.type === MediaType.Image">
+                  <img
+                    class="media-child"
+                    src="assets/media/materials/{{selectedMedia.folderName}}/{{childMedia.fileName}}"
+                    (click)="onClickChildMedia(childMedia)">
+                </div>
+                <div class="video-child-container" *ngIf="childMedia.type === MediaType.Video" (click)="onClickChildMedia(childMedia)">
+                  <img
+                  class="media-child"
+                  src="assets/media/materials/{{selectedMedia.folderName}}/{{childMedia.thumbnailFileName}}">
+                  <nb-icon class="play-icon" icon="play-circle-outline"></nb-icon>
+                </div>
+              </ng-container>
+            </div>
+          </div>
+          <div fxFlex fxLayout="column" fxLayoutAlign="start center">
+            <h1 fxFlex="1em">{{selectedMedia.title}}</h1>
+            <h4 fxFlex="1em">{{selectedMedia.description}}</h4>
+            <h4 fxFlex>{{selectedMedia.credits}}</h4>
+          </div>
+        </div>
+      </div>
+  </nb-card-body>
+</nb-card>

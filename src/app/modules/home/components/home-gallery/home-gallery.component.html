@@ -1,0 +1,9 @@
+<div fxLayout="row wrap">
+  <app-home-gallery-item
+    (click)="openDialog(media, mediaArray)"
+    *ngFor="let media of mediaArray; let i = index;"
+    fxFlex="25"
+    fxFlex.xs="100"
+    [media]="media"
+  ></app-home-gallery-item>
+</div>

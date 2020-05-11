@@ -1,0 +1,22 @@
+@import '~@nebular/theme/styles/theming';
+@import '~@nebular/theme/styles/themes/default';
+
+$nb-themes: nb-register-theme((
+  font-family-primary: jost,
+
+  text-heading-1-font-size: 2.25em,
+  text-heading-1-line-height: 3em,
+  text-heading-2-font-size: 2em,
+  text-heading-2-line-height: 2.5em,
+  text-heading-4-font-size: 1.5em,
+  text-heading-4-line-height: 1.7em,
+  text-heading-4-font-weight: 100,
+
+  layout-padding: 0em,
+  layout-window-shadow: none,
+  card-height-giant: 54em,
+  card-margin-bottom: 0em,
+  icon-font-size: 2.25em,
+  input-large-max-width: 35rem,
+
+), custom-light-theme, default);
