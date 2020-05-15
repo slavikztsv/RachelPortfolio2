@@ -11,6 +11,7 @@ import { MainContainerModule } from './modules/main-container/main-container.mod
 import { HomeModule } from './modules/home/home.module';
 import { ContactModule } from './modules/contact/contact.module';
 import { AboutMeModule } from './modules/about-me/about-me.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { AboutMeModule } from './modules/about-me/about-me.module';
     MainContainerModule,
     HomeModule,
     ContactModule,
-    AboutMeModule
+    AboutMeModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

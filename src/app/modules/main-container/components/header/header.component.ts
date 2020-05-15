@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public menuItems = [
-    { name: 'Home', id: 'home', route: '/home' },
-    { name: 'About Me', id: 'about-me', route: '/about-me' },
-    { name: 'Contact', id: 'contact', route: '/contact' },
+    { name: 'HOME', id: 'home', route: '/home' },
+    { name: 'ABOUT ME', id: 'about-me', route: '/about-me' },
+    { name: 'CONTACT', id: 'contact', route: '/contact' },
   ];
   constructor() { }
 

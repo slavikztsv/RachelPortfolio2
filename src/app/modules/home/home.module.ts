@@ -9,11 +9,13 @@ import { NebularModule } from '../nebular/nebular.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgxParallaxScrollModule } from 'ngx-parallax-scroll';
 import { VgCoreModule, VgControlsModule  } from 'ngx-videogular';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [HomeGalleryComponent, HomeGalleryItemComponent, HomeComponent, HomeGalleryItemDetailsComponent],
   imports: [
     CommonModule,
+    SharedModule,
     NebularModule,
     FlexLayoutModule,
     BrowserAnimationsModule,

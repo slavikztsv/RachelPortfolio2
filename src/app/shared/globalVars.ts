@@ -56,6 +56,7 @@ export default class GlobalVars {
       description: 'Music tour 2019',
       credits: 'Design: Rachel Zaitsev\nStudio: Insight',//Moon photo-Rachel animator
       childMedia: [
+        new Media('1.jpg'),
         new Media('2.mp4', MediaType.Video, '2.jpg')
       ]
     },
@@ -98,7 +99,6 @@ export default class GlobalVars {
       credits: 'Screen designs: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('1.jpg'),
-        new Media('2.jpg'),
         new Media('3.jpg'),
         new Media('4.jpg'),
         new Media('5.jpg'),

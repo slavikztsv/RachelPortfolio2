@@ -20,3 +20,16 @@ ngx-parallax-scroll {
 .home-gallery {
   z-index: 5;
 }
+
+.home-title {
+  position: absolute;
+  z-index: 6;
+  font-size: 5rem;
+  font-family: lobster-regular;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 27rem;
+  top: 10rem;
+}

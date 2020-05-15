@@ -21,19 +21,7 @@ export class HomeGalleryComponent implements OnInit {
   }
 
   openDialog(selectedMedia: Media, mediaArray: Array<Media>): void {
-    this.mediaDetailsData.selectedMedia = selectedMedia;
-    if (selectedMedia.childMedia.length === 0) {
-      this.mediaDetailsData.selectedMedia.fileName = selectedMedia.fileName;
-    } else {
-      this.mediaDetailsData.selectedMedia.fileName = selectedMedia.childMedia[0].fileName;
-    }
-    if (selectedMedia.childMedia.length === 1 && selectedMedia.childMedia[0].type === MediaType.Video) {
-      this.mediaDetailsData.selectedMedia.fileName = selectedMedia.childMedia[0].fileName;
-      this.mediaDetailsData.selectedMedia.type = selectedMedia.childMedia[0].type;
-      this.mediaDetailsData.selectedMedia.thumbnailFileName =  selectedMedia.childMedia[0].thumbnailFileName;
-      this.mediaDetailsData.selectedMedia.childMedia = [];
-    }
-
+    this.mediaDetailsData.selectedMedia = this.homeService.getSelectedMediaLogic(selectedMedia);
     this.mediaDetailsData.mediaArray = mediaArray;
     this.dialogService.open(HomeGalleryItemDetailsComponent, { context: this.mediaDetailsData, backdropClass: 'custom-backdrop' });
   }

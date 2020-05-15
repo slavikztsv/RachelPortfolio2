@@ -2,10 +2,10 @@
 @import '~@nebular/theme/styles/themes/default';
 
 $nb-themes: nb-register-theme((
-  font-family-primary: jost,
+  font-family-primary: opensans-regular,
 
   text-heading-1-font-size: 2.25em,
-  text-heading-1-line-height: 3em,
+  text-heading-1-line-height: 1.5em,
   text-heading-2-font-size: 2em,
   text-heading-2-line-height: 2.5em,
   text-heading-4-font-size: 1.5em,
@@ -18,5 +18,8 @@ $nb-themes: nb-register-theme((
   card-margin-bottom: 0em,
   icon-font-size: 2.25em,
   input-large-max-width: 35rem,
+  header-text-color: white,
+  header-text-font-family: opensans-regular,
+  header-text-font-size: 1.4em
 
 ), custom-light-theme, default);

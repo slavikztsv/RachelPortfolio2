@@ -13,7 +13,8 @@
   }
 
   nb-layout-header {
-    background-color: transparent !important;
+    background-color: #00000014 !important;
+    z-index: 4 !important;
   }
 
   nb-layout-header nav {
@@ -26,15 +27,50 @@
 
   .layout-container {
     padding-top: 0rem !important;
-}
+  }
+
+  nb-card.size-giant {
+    width: 96em;
+  }
+
 
   @include nb-theme-global();
 };
 /* You can add global styles to this file, and also import other style files */
 
+// @font-face {
+//   font-family: jost;
+//   src: url(assets/fonts/Jost-Variable.ttf);
+// }
+
 @font-face {
-  font-family: jost;
-  src: url(assets/fonts/Jost-Variable.ttf);
+  font-family: opensans-regular;
+  src: url(assets/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans-light;
+  src: url(assets/fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(assets/fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: opensans-semibold;
+  src: url(assets/fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: lobster-regular;
+  src: url(assets/fonts/LobsterTwo-Regular.ttf);
+}
+
+@font-face {
+  font-family: lobster-bold;
+  src: url(assets/fonts/LobsterTwo-Bold.ttf);
 }
 
 
@@ -88,4 +124,9 @@ h1,h4 {
 .nb-card-xs {
   height: 100vh !important;
   width: 100vw !important;
+}
+
+.media-primary {
+  width: 53em;
+  height: 40em;
 }

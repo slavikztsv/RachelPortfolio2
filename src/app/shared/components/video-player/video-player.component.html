@@ -1,0 +1,6 @@
+<vg-player (onPlayerReady)="onPlayerReady($event)">
+
+  <video class="media-primary" [vgMedia]="media" #media [id]="selectedMedia.fileName" preload="auto" controls controlsList="nodownload">
+      <source src="assets/media/materials/{{selectedMedia.folderName}}/{{selectedMedia.fileName}}" type="video/mp4">
+  </video>
+</vg-player>

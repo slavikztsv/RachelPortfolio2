@@ -12,11 +12,6 @@
   width: 100vw !important;
 }
 
-.media-primary {
-  width: 53em;
-  height: 40em;
-}
-
 .media-child {
   width: 8em;
   height: 6em;
@@ -47,4 +42,16 @@ video {
 
 nb-icon, .media-child {
   cursor: pointer;
+}
+
+.item-details-title {
+  text-align: center;
+}
+
+.item-details-description {
+
+}
+
+.item-details-credits {
+
 }

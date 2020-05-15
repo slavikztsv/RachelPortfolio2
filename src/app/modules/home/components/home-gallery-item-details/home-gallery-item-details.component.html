@@ -14,11 +14,7 @@
                 <img class="media-primary" src="assets/media/materials/{{selectedMedia.folderName}}/{{selectedMedia.fileName}}">
               </div>
               <div *ngIf="selectedMedia.type === MediaType.Video">
-                <vg-player (onPlayerReady)="onPlayerReady($event)">
-                  <video [vgMedia]="media" #media [id]="selectedMedia.fileName" preload="auto" controls>
-                      <source src="assets/media/materials/{{selectedMedia.folderName}}/{{selectedMedia.fileName}}" type="video/mp4">
-                  </video>
-                </vg-player>
+                <app-video-player [selectedMedia]="selectedMedia"></app-video-player>
               </div>
               <div>
                 <nb-icon icon="arrow-ios-forward-outline" (click)="onNextMediaClick()"></nb-icon>
@@ -42,9 +38,9 @@
             </div>
           </div>
           <div fxFlex fxLayout="column" fxLayoutAlign="start center">
-            <h1 fxFlex="1em">{{selectedMedia.title}}</h1>
-            <h4 fxFlex="1em">{{selectedMedia.description}}</h4>
-            <h4 fxFlex>{{selectedMedia.credits}}</h4>
+            <h1 class="item-details-title">{{selectedMedia.title}}</h1>
+            <h4 class="item-details-description">{{selectedMedia.description}}</h4>
+            <h4 class="item-details-credits">{{selectedMedia.credits}}</h4>
           </div>
         </div>
       </div>
