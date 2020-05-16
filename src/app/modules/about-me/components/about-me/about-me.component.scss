@@ -1,0 +1,25 @@
+.about-me-container {
+  background-image: url(../../../../../assets/images/about-me.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 3rem 1rem 3rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: opensans-regular;
+  line-height: 3rem;
+  color: #ff3d71;
+}
+
+.info-text-large {
+  font-size: 1.7rem;
+}
+
+.info-text {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: white;
+  font-family: opensans-light;
+}

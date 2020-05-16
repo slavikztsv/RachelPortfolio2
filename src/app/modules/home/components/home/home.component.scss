@@ -1,11 +1,20 @@
-.main-image {
+.home-container {
+  background-image: url(../../../../../assets/images/main-bottom.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-image-xl {
   object-fit: cover;
   object-position: top;
   width: 100vw;
-  // height: 60vh;
-  // height: 35rem;
-  // width: calc(100vw - 10px);
-  // transform: translateY(31rem);
+}
+
+.main-image-lg {
+  object-fit: cover;
+  object-position: top;
+  width: 106vw;
 }
 
 ngx-parallax-scroll {
@@ -31,5 +40,79 @@ ngx-parallax-scroll {
   margin-left: auto;
   margin-right: auto;
   width: 27rem;
-  top: 10rem;
+  top: 9rem;
+}
+
+.home-subtitle {
+  position: absolute;
+  z-index: 6;
+  font-size: 1.2rem;
+  font-family: opensans-regular;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17rem;
+  top: 12.1rem;
+}
+
+.footer {
+  background-color: #00000014;
+}
+
+// mouse scroll icon
+
+.icon-scroll,
+.icon-scroll:before {
+    position: absolute;
+    left: 50%
+}
+.icon-scroll {
+  width: 1.5rem;
+  height: 2.5rem;
+  bottom: 5.3rem;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+}
+
+.icon-scroll:before {
+    content: '';
+    width: 0.2rem;
+    height: 0.2rem;
+    background: #fff;
+    margin-left: -0.1rem;
+    top: 0.5rem;
+    border-radius: 2rem;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-name: scroll
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(1.7rem)
+    }
+}
+
+.icon-dot {
+  position: absolute;
+  left: 50%;
+  width: 0.2rem;
+  height: 0.2rem;
+  background: #fff;
+  margin-left: 0.6rem;
+  border-radius: 4rem;
+  bottom: 4rem;
+}
+
+.icon-dot-2 {
+  bottom: 2.5rem;
+}
+
+.icon-dot-3 {
+  bottom: 1rem;
 }

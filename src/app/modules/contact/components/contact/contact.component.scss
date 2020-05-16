@@ -1,0 +1,52 @@
+.contact-container {
+  background-image: url(../../../../../assets/images/contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10rem 3rem 1rem 3rem;
+}
+
+.contact-form {
+  width: 35rem !important;
+}
+
+textarea {
+  resize: none;
+}
+
+.title {
+  font-size: 3rem;
+  font-family: opensans-regular;
+  line-height: 3rem;
+  color: #ff3d71;
+}
+
+.info-text {
+  font-size: 1.2rem;
+  color: white;
+  font-family: opensans-light;
+}
+
+.info-icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.leave-text {
+  font-size: 1.2rem;
+  color: #ff3d71;
+}
+
+.leave-icon {
+  color: #ff3d71;
+  font-size: 1.5rem;
+}
+
+
+input, textarea {
+  width: 35rem;
+}
+
+button {
+  margin-left: 29.5rem;
+}

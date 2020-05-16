@@ -1,11 +1,21 @@
-<div fxLayout="column" fxLayoutAlign="start center" style=" color: white;">
+<div class="home-container" fxLayout="column" fxLayoutAlign="start center" style=" color: white;">
   <div fxFlex fxLayout="row">
     <span class="home-title">Rachel Zaitsev</span>
+    <span class="home-subtitle">Graphic Designer | Animator</span>
     <ngx-parallax-scroll [config]="ngParallaxConf">
-      <img class="main-image" src="assets/images/main.jpg" alt="">
+      <img ngClass.xl="main-image-xl" ngClass.lt-xl="main-image-lg" src="assets/images/main-top.jpg" alt="">
     </ngx-parallax-scroll>
+    <div [ngStyle]="{opacity: scrollIconOpacity}">
+      <div class="icon-scroll"></div>
+      <div class="icon-dot"></div>
+      <div class="icon-dot icon-dot-2"></div>
+      <div class="icon-dot icon-dot-3"></div>
+    </div>
   </div>
-  <div class="home-gallery" fxLayout="row">
+  <div class="home-gallery" fxLayout="row" #homeGallery>
     <app-home-gallery></app-home-gallery>
+  </div>
+  <div class="footer" fxLayout="row" fxLayoutAlign="center center" fxFlexFill>
+    <span>All rights reserved</span>
   </div>
 </div>

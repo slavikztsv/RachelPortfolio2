@@ -15,16 +15,10 @@ export class HomeService {
   }
 
   getSelectedMediaLogic(selectedMedia: Media) {
-    if (selectedMedia.childMedia.length > 0 && selectedMedia.type === MediaType.Image) {
-      selectedMedia.fileName = selectedMedia.childMedia[0].fileName;
-    }
-    if (selectedMedia.childMedia.length === 1 && selectedMedia.childMedia[0].type === MediaType.Video) {
+    if (selectedMedia.childMedia.length > 0) {
       selectedMedia.fileName = selectedMedia.childMedia[0].fileName;
       selectedMedia.type = selectedMedia.childMedia[0].type;
-      selectedMedia.thumbnailFileName =  selectedMedia.childMedia[0].thumbnailFileName;
-      selectedMedia.childMedia = [];
     }
-
     return selectedMedia;
   }
 }

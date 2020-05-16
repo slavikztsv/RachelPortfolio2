@@ -4,7 +4,7 @@
         <div fxLayout="row" fxLayoutAlign="end center">
           <nb-icon icon="close-outline" class="no-select" (click)="onCloseClick()"></nb-icon>
         </div>
-        <div fxLayout="row" fxLayout.xs="column">
+        <div fxLayout="row" fxLayout.xs="column" *ngIf="selectedMedia">
           <div fxFlex fxLayout="column" fxLayoutGap="1em" fxFlexFill>
             <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="1em">
               <div>

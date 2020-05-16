@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<div class="contact-container" fxLayout="row" fxLayoutAlign="start space-between" fxFlexFill>
+  <div fxFlex fxLayout="row" fxLayoutAlign="center start">
+    <div fxLayout="column" fxLayoutGap="2rem">
+      <span class="title">LETS TALK</span>
+      <div fxLayout="column" fxLayoutGap="1rem">
+        <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="start center">
+          <nb-icon class="info-icon" icon="email-outline"></nb-icon>
+          <span class="info-text">Rachel.lavy.il@gmail.com</span>
+        </div>
+        <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="start center">
+          <nb-icon class="info-icon" icon="phone-outline"></nb-icon>
+          <span class="info-text">+972-522248900</span>
+        </div>
+      </div>
+      <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="start end">
+        <div fxLayout="column">
+          <span class="leave-text">OR JUST</span>
+          <span class="leave-text">LEAVE YOUR</span>
+          <span class="leave-text">DETAILS OVER THERE</span>
+        </div>
+        <nb-icon class="leave-icon" icon="chevron-right-outline"></nb-icon>
+      </div>
+    </div>
+  </div>
+  <form class="contact-form"
+        fxFlex
+        fxLayout="column"
+        [formGroup]="contactForm"
+        (ngSubmit)="onSubmit()"
+        fxLayoutAlign="start start"
+        fxLayoutGap="0.4rem">
+    <input nbInput fieldSize="large" formControlName="name" placeholder="Name" >
+    <input nbInput fieldSize="large" formControlName="email" placeholder="Email">
+    <input nbInput fieldSize="large" formControlName="phone" placeholder="Phone">
+    <textarea nbInput fieldSize="large" formControlName="message" placeholder="Type your message here..."></textarea>
+    <button class="submit" type="submit" nbButton filled status="danger" fxFlexAlign="start">Submit</button>
+  </form>
+</div>

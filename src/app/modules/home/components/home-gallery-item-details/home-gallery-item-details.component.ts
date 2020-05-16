@@ -29,21 +29,27 @@ export class HomeGalleryItemDetailsComponent implements OnInit {
   }
 
   onPrevMediaClick() {
-    if (this.mediaArray[this.currentMediaIndex - 1]) {
-      this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[this.currentMediaIndex - 1]);
-    } else {
-      this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[this.mediaArray.length - 1]);
-    }
-    this.currentMediaIndex = this.mediaArray.indexOf(this.selectedMedia);
+    this.selectedMedia = null;
+    setTimeout(() => {
+      if (this.mediaArray[this.currentMediaIndex - 1]) {
+        this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[this.currentMediaIndex - 1]);
+      } else {
+        this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[this.mediaArray.length - 1]);
+      }
+      this.currentMediaIndex = this.mediaArray.indexOf(this.selectedMedia);
+    });
   }
 
   onNextMediaClick() {
-    if (this.mediaArray[this.currentMediaIndex + 1]) {
-      this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[this.currentMediaIndex + 1]);
-    } else {
-      this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[0]);
-    }
-    this.currentMediaIndex = this.mediaArray.indexOf(this.selectedMedia);
+    this.selectedMedia = null;
+    setTimeout(() => {
+      if (this.mediaArray[this.currentMediaIndex + 1]) {
+        this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[this.currentMediaIndex + 1]);
+      } else {
+        this.selectedMedia = this.homeService.getSelectedMediaLogic(this.mediaArray[0]);
+      }
+      this.currentMediaIndex = this.mediaArray.indexOf(this.selectedMedia);
+    });
   }
 
   onClickChildMedia(selectedChildMedia: Media) {
