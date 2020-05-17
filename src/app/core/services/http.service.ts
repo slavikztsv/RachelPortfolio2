@@ -9,7 +9,8 @@ export class HttpService {
   private httpHeaders: HttpHeaders;
   constructor(private http: HttpClient) {
     this.httpHeaders = new HttpHeaders({
-      'Content-Type' : 'application/json'
+      'Content-Type' : 'application/json',
+      'Accept': 'application/vnd.pageclip.v1+json'
     });
   }
 
@@ -18,8 +19,11 @@ export class HttpService {
         contactForm,
         {headers: this.httpHeaders})
       .subscribe(
-      () => {
-        console.log('!!! ');
+      data => {
+        console.log(data);
+      },
+      error => {
+        console.log(error);
       }
     );
   }

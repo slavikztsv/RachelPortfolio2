@@ -11,7 +11,12 @@ export class HomeService {
   constructor() { }
 
   getMediaArray() {
-    return GlobalVars.mediaArray;
+    const newArr = [];
+    for (const media of GlobalVars.mediaArray) {
+      newArr.push(Object.assign({}, media));
+    }
+
+    return newArr;
   }
 
   getSelectedMediaLogic(selectedMedia: Media) {

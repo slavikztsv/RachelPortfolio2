@@ -23,7 +23,10 @@ export class HomeGalleryComponent implements OnInit {
   openDialog(selectedMedia: Media, mediaArray: Array<Media>): void {
     this.mediaDetailsData.selectedMedia = this.homeService.getSelectedMediaLogic(selectedMedia);
     this.mediaDetailsData.mediaArray = mediaArray;
-    this.dialogService.open(HomeGalleryItemDetailsComponent, { context: this.mediaDetailsData, backdropClass: 'custom-backdrop' });
+    this.dialogService.open(HomeGalleryItemDetailsComponent, { context: this.mediaDetailsData, backdropClass: 'custom-backdrop' })
+    .onClose.subscribe(() => {
+      this.mediaArray = this.homeService.getMediaArray();
+    });
   }
 
 }
