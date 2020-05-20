@@ -1,4 +1,4 @@
-<div class="contact-container" fxLayout="row" fxLayoutAlign="start space-between" fxFlexFill>
+<div class="contact-container" fxLayout="row"  fxLayout.lt-sm="column"  fxLayoutAlign="start space-between" fxLayoutAlign.lt-sm="center start" fxLayoutGap.lt-sm="1rem" fxFlexFill>
   <div fxFlex fxLayout="row" fxLayoutAlign="center start">
     <div fxLayout="column" fxLayoutGap="2rem">
       <span class="title">LETS TALK</span>
@@ -12,7 +12,7 @@
           <span class="info-text">+972-522248900</span>
         </div>
       </div>
-      <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="start end">
+      <div fxLayout="row" fxLayoutGap="0.5rem" fxLayoutAlign="start end" fxHide.lt-sm>
         <div fxLayout="column">
           <span class="leave-text">OR JUST</span>
           <span class="leave-text">LEAVE YOUR</span>
@@ -23,16 +23,23 @@
     </div>
   </div>
   <form class="contact-form"
+        #form="ngForm"
         fxFlex
         fxLayout="column"
-        [formGroup]="contactForm"
-        (ngSubmit)="onSubmit()"
+        (ngSubmit)="sendEmail($event, form)"
         fxLayoutAlign="start start"
-        fxLayoutGap="0.4rem">
-    <input nbInput fieldSize="large" formControlName="name" placeholder="Name" >
-    <input nbInput fieldSize="large" formControlName="email" placeholder="Email">
-    <input nbInput fieldSize="large" formControlName="phone" placeholder="Phone">
-    <textarea nbInput fieldSize="large" formControlName="message" placeholder="Type your message here..."></textarea>
-    <button class="submit" type="submit" nbButton filled status="danger" fxFlexAlign="start">Submit</button>
+        fxLayoutGap="0.4rem"
+        fxHide.lt-sm>
+    <input nbInput fieldSize="large" name="name" placeholder="Name" >
+    <input nbInput fieldSize="large" name="email" placeholder="Email">
+    <input nbInput fieldSize="large" name="phone" placeholder="Phone">
+    <textarea nbInput fieldSize="large" name="message" placeholder="Type your message here..."></textarea>
+    <div class="actions-container" fxLayout="row" fxLayoutAlign="space-between center">
+      <span
+        class="sent-message"
+        [ngStyle]="{'visibility': isSent ? 'visible': 'hidden'}"
+        >Message Sent, We'll be in touch!</span>
+      <button class="submit" type="submit" value="Send" nbButton filled status="danger" fxFlexAlign="start">Submit</button>
+    </div>
   </form>
 </div>

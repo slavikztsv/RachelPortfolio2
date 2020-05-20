@@ -17,6 +17,16 @@
   width: 106vw;
 }
 
+.main-image-xs {
+  object-fit: cover;
+  object-position: top;
+  width: 117vw;
+}
+
+.parallax-scroll-xs {
+  height: 80vh;
+}
+
 ngx-parallax-scroll {
   height: 100vh;
   // position: absolute;
@@ -33,14 +43,18 @@ ngx-parallax-scroll {
 .home-title {
   position: absolute;
   z-index: 6;
-  font-size: 5rem;
+  font-size: 5em;
   font-family: lobster-regular;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 27rem;
+  width: max-content;
   top: 9rem;
+}
+
+.home-title-xs {
+  font-size: 4em !important;
 }
 
 .home-subtitle {

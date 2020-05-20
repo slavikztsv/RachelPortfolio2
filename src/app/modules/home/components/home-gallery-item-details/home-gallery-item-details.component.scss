@@ -44,14 +44,18 @@ nb-icon, .media-child {
   cursor: pointer;
 }
 
+.icon-xs {
+  font-size: 5em;
+}
+
 .item-details-title {
   text-align: center;
 }
 
-.item-details-description {
-
+.text-xs {
+  font-size: 350% !important;
 }
 
-.item-details-credits {
-
+.item-details-description {
+  text-align: center;
 }

@@ -23,6 +23,10 @@ export class HomeService {
     if (selectedMedia.childMedia.length > 0) {
       selectedMedia.fileName = selectedMedia.childMedia[0].fileName;
       selectedMedia.type = selectedMedia.childMedia[0].type;
+
+      if (selectedMedia.childMedia.length === 1) {
+        selectedMedia.childMedia = [];
+      }
     }
     return selectedMedia;
   }

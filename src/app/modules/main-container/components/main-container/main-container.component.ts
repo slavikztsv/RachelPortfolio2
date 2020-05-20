@@ -15,7 +15,6 @@ export class MainContainerComponent implements OnInit {
     this.layoutRulerService.getDimensions().subscribe(
       dimentions => {
         console.log(dimentions);
-        console.log(this.root);
         console.log(this.devicePixelRatio);
         // this.root.style.setProperty('--root-font-size', 100 / this.devicePixelRatio + '%');
       }

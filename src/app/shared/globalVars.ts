@@ -46,7 +46,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Ministry of Education',
-      description: 'Conference item',
+      description: 'Conference opening item',
       credits: 'Design: Rachel Zaitsev\nAnimation: Gal Daniel\nStudio: Insight',
       childMedia: [
         new Media('2.mp4', MediaType.Video, '1.jpg')
@@ -58,8 +58,8 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Sounds of the\nOld City',
-      description: 'Jerusalem fest - Traveling within a soundtrack\nprojected in 360 degrees dome',
-      credits: 'Design: Rachel Zaitsev\nAnimation: Nitzan Papir, Gal Daniel\nStudio & Video edit: Insight',
+      description: 'Jerusalem Sound Festival\nTraveling within a soundtrack\nprojected in 360 degrees dome',
+      credits: 'Design: Rachel Zaitsev\nAnimation: Nitzan Papir, Gal Daniel\nStudio: Insight',
       childMedia: [
         new Media('2.mp4', MediaType.Video, '1.jpg')
       ]
@@ -82,7 +82,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'NYC Wedding',
-      description: 'Some description here',
+      description: 'Parisian garden themed wedding',
       credits: 'Design: Rachel Zaitsev\nMusic: Mattia Cupelli\nStudio: Insight',
       childMedia: [
         new Media('2.jpg'),
@@ -109,7 +109,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Bonnie Tyler',
-      description: 'A show at Microsoft event 2020',
+      description: 'Microsoft annual event 2020',
       credits: 'Design: Rachel Zaitsev\nAnimation: Rotem Tzur, Valeri Hudedatov\nMusic: Mattia Cupelli, Alec Koff\nStudio: Insight\nPhotography: Tomer Foltyn',
       childMedia: [
         new Media('1.jpg'),
@@ -142,7 +142,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Meir Ariel Tribute',
-      description: 'A special show commemorating 20 years of his passing',
+      description: 'A special show\ncommemorating 20 years of his passing',
       credits: 'Design: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('1.jpg'),
@@ -183,7 +183,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Ivri Lider',
-      description: 'A Queen tribute at Microsoft event 2019',
+      description: 'Microsoft annual event 2019',
       credits: 'Design: Rachel Zaitsev\nAnimation: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('2.mp4', MediaType.Video, '1.jpg')
@@ -195,7 +195,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Sapir Prize',
-      description: '2020 Award ceremony',
+      description: 'Award ceremony 2020',
       credits: 'Animation: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('2.mp4', MediaType.Video, '1.jpg')
@@ -207,8 +207,8 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Israel Prize',
-      description: '2019 award ceremony',
-      credits: 'Screen designs: Rachel Zaitsev\nStudio: Insight',
+      description: 'Award ceremony 2019',
+      credits: 'Design (screens): Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('1.jpg'),
         new Media('3.jpg'),
@@ -225,7 +225,7 @@ export default class GlobalVars {
       thumbnailFileName: null,
       title: 'The Man Who\nMistook His Wife\nfor a Hat',
       description: 'A theater show, Khan Theater',
-      credits: 'Design: Rachel Zaitsev\nTransitions animation: Rachel Zaitsev\nStudio: Insight',
+      credits: 'Design: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('1.jpg'),
         new Media('2.jpg'),
@@ -250,7 +250,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: '71 Independence Day',
-      description: '...at nasi house 2019',
+      description: 'Israel Annual ceremony\nat the President\'s house 2019',
       credits: 'Design: Rachel Zaitsev\nAnimation: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
       ]
@@ -261,7 +261,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: '72 Independence Day',
-      description: '...at nasi house 2020',
+      description: 'Israel Annual ceremony\nat the President\'s house 2020',
       credits: 'Design: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('1.jpg'),
@@ -278,7 +278,7 @@ export default class GlobalVars {
       thumbnailFileName: null,
       title: 'Rishon Lezion\nMemorial Ceremony',
       description: 'Memorial day for the IDF 2019',
-      credits: 'Design: Rachel Zaitsev\nAnimation: Nitzan Papir, Talya Ben-Em, Rotem Tzur\nStudio: Insight',//music: mattia cupelli
+      credits: 'Design: Rachel Zaitsev\nAnimation: Nitzan Papir,\nTalya Ben-Em, Rotem Tzur\nStudio: Insight',//music: mattia cupelli
       childMedia: [
         new Media('1.mp4', MediaType.Video, '1.jpg'),
         new Media('2.mp4', MediaType.Video, '2.jpg')
@@ -301,8 +301,8 @@ export default class GlobalVars {
       fileName: '1.jpg',
       type: MediaType.Image,
       thumbnailFileName: null,
-      title: 'Carmel memorial lala',
-      description: 'lala',
+      title: 'The Carmel Disaster\nMemorial Ceremony',
+      description: 'Memorial Day 2020',
       credits: 'Design: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
        ]
@@ -313,31 +313,31 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Shluchim Conference',
-      description: '2019 International conference',
-      credits: 'Screen video art: Rachel Zaitsev\nAnimation: Rachel Zaitsev\nStudio: Insight',
+      description: 'International conference 2019',
+      credits: 'Design (Screen): Rachel Zaitsev\nAnimation: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('2.mp4', MediaType.Video, '1.jpg')
       ]
     },
-    {
-      folderName: 'manhigim_23012020',
-      fileName: '1.jpg',
-      type: MediaType.Image,
-      thumbnailFileName: null,
-      title: 'Holocaust Forum',
-      description: 'World leaders conference 2020',
-      credits: 'Design: Nili Hamudot, Lital, Rachel Zaitsev\nStudio: Insight',
-      childMedia: [
-        new Media('2.mp4', MediaType.Video, '1.jpg')
-      ]
-    },
+    // {
+    //   folderName: 'manhigim_23012020',
+    //   fileName: '1.jpg',
+    //   type: MediaType.Image,
+    //   thumbnailFileName: null,
+    //   title: 'Holocaust Forum',
+    //   description: 'World leaders conference 2020',
+    //   credits: 'Design: Nili Hamudot, Lital, Rachel Zaitsev\nStudio: Insight',
+    //   childMedia: [
+    //     new Media('2.mp4', MediaType.Video, '1.jpg')
+    //   ]
+    // },
     {
       folderName: 'ramatkal_13012019',
       fileName: '1.jpg',
       type: MediaType.Image,
       thumbnailFileName: null,
-      title: 'Gadi Eizenkot preda',
-      description: 'preda ceremony',
+      title: 'Chief of the\nGeneral Staff\n(Ramatkal) Farewell',
+      description: 'Gadi Eizenkot farewell ceremony',
       credits: 'Design: Rachel Zaitsev\nAnimation: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('2.mp4', MediaType.Video, '1.jpg'),
@@ -349,8 +349,8 @@ export default class GlobalVars {
       fileName: '1.jpg',
       type: MediaType.Image,
       thumbnailFileName: null,
-      title: 'Ness event',
-      description: 'summary of..',
+      title: 'Ness company event',
+      description: '20 year anniversary',
       credits: 'Design: Rachel Zaitsev\nStudio: Insight',
       childMedia: [
         new Media('1.mp4', MediaType.Video, '1.jpg')
@@ -362,7 +362,7 @@ export default class GlobalVars {
       type: MediaType.Image,
       thumbnailFileName: null,
       title: 'Slot Machine',
-      description: 'lala',
+      description: 'Simulating a slot machine game',
       credits: 'Animation: Rachel Zaitsev',
       childMedia: [
         new Media('1.mp4', MediaType.Video, '1.jpg')
