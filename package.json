@@ -25,7 +25,6 @@
     "@nebular/eva-icons": "5.0.0",
     "@nebular/theme": "^5.0.0",
     "@ngneat/until-destroy": "^7.1.6",
-    "emailjs-com": "^2.4.1",
     "eva-icons": "^1.1.2",
     "ngx-parallax-scroll": "^1.0.2",
     "ngx-videogular": "^9.0.1",
