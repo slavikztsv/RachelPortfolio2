@@ -1,10 +1,10 @@
 <div class="home-container" fxLayout="column" fxLayoutAlign="start center" style=" color: white;">
   <div fxFlex fxLayout="row">
     <span class="home-title" ngClass.lt-sm="home-title-xs">Rachel Zaitsev</span>
-    <span class="home-subtitle">Graphic Designer | Animator</span>
+    <span class="home-subtitle" ngClass.lt-sm="home-subtitle-xs">Graphic Design | Animation | Editing</span>
     <ngx-parallax-scroll [config]="ngParallaxConf">
       <img fxHide.lt-sm ngClass.xl="main-image-xl" ngClass.lt-xl="main-image-lg" src="assets/images/main-top.jpg" alt="">
-      <img fxShow.lt-sm ngClass.lt-sm="main-image-xs" src="assets/images/main-top-portrait.jpg" alt="">
+      <img fxShow.lt-sm fxHide.gt-xs ngClass.lt-sm="main-image-xs" src="assets/images/main-top-portrait.jpg" alt="">
     </ngx-parallax-scroll>
     <div [ngStyle]="{opacity: scrollIconOpacity}">
       <div class="icon-scroll"></div>
